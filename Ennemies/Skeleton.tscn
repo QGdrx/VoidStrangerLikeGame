@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvfrs2o218iik"]
+
+[ext_resource type="Script" path="res://Ennemies/Skeleton.gd" id="1_i63ub"]
+[ext_resource type="Texture2D" uid="uid://dbyop21mqy7fx" path="res://Sprites/Ennemies/Skeleton/Skeleton32.png" id="2_nj76p"]
+
+[node name="Skeleton" type="Node2D"]
+script = ExtResource("1_i63ub")
+
+[node name="SpriteSkeleton" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_nj76p")
+hframes = 22
+
+[node name="AnimationSkeleton" type="AnimationPlayer" parent="."]
+root_node = NodePath("../SpriteSkeleton")

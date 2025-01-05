@@ -1,0 +1,32 @@
+[gd_scene load_steps=7 format=3 uid="uid://dhag1w52c8ohj"]
+
+[ext_resource type="Script" path="res://Stages/Mecanics.gd" id="1_da2vo"]
+[ext_resource type="TileSet" uid="uid://m0clvwg7c4u1" path="res://TileMap/TileMap.tres" id="2_deq7i"]
+[ext_resource type="PackedScene" uid="uid://dc2wda1a481xr" path="res://Player/Player.tscn" id="3_vmq0t"]
+[ext_resource type="AudioStream" uid="uid://xc4rtxkk6ydu" path="res://Music/Sound effect/Glass_step.wav" id="4_l07iu"]
+[ext_resource type="PackedScene" uid="uid://du3jh4x0wq85m" path="res://Menus/Menu.tscn" id="5_ppk8l"]
+[ext_resource type="AudioStream" uid="uid://bgxbtal2wukj5" path="res://Music/Sound effect/StageCompleted.mp3" id="6_fd2q1"]
+
+[node name="Stage2" type="Node2D"]
+script = ExtResource("1_da2vo")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Menu" parent="CanvasLayer" instance=ExtResource("5_ppk8l")]
+
+[node name="TileMap" type="TileMap" parent="."]
+texture_filter = 1
+tile_set = ExtResource("2_deq7i")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 6, 0, 65536, 6, 0, 131072, 6, 0, 1, 6, 0, 65537, 6, 0, 131073, 6, 0, 2, 6, 0, 65538, 6, 0, 131074, 6, 0, 3, 6, 0, 65539, 6, 0, 131075, 6, 0, 4, 6, 0, 65540, 6, 0, 131076, 6, 0, 5, 8, 0, 65541, 8, 0, 131077, 8, 0, 6, 8, 0, 65542, 8, 0, 131078, 8, 0, 7, 8, 0, 65543, 8, 0, 131079, 8, 0, 131080, 6, 0, 131081, 6, 0, 65545, 6, 0, 9, 6, 0, 8, 6, 0, 65544, 0, 0, 262142, 9, 0, 327678, 9, 0, 262143, 9, 0, 327679, 9, 0, 196608, 9, 0, 262144, 9, 0, 196609, 9, 0, 262145, 9, 0, 196610, 9, 0, 262146, 9, 0, 196611, 9, 0, 262147, 9, 0, 196612, 9, 0, 262148, 9, 0, 196613, 9, 0, 262149, 9, 0, 196614, 9, 0, 262150, 9, 0, 196615, 9, 0, 262151, 9, 0, 196616, 9, 0, 262152, 9, 0, 196617, 9, 0, 262153, 9, 0, 196618, 9, 0, 262154, 9, 0, 196619, 9, 0, 262155, 9, 0, -131062, 9, 0, -65526, 9, 0, 10, 9, 0, 65546, 9, 0, 131082, 9, 0, -131061, 9, 0, -65525, 9, 0, 11, 9, 0, 65547, 9, 0, 131083, 9, 0, -65538, 9, 0, -2, 9, 0, -65537, 9, 0, -1, 9, 0, -131072, 9, 0, -65536, 9, 0, -131071, 9, 0, -65535, 9, 0, -131070, 9, 0, -65534, 9, 0, -131069, 9, 0, -65533, 9, 0, -131068, 9, 0, -65532, 9, 0, -131067, 9, 0, -65531, 9, 0, -131066, 9, 0, -65530, 9, 0, -131065, 9, 0, -65529, 9, 0, -131064, 9, 0, -65528, 9, 0, -131063, 9, 0, -65527, 9, 0, 65534, 9, 0, 131070, 9, 0, 196606, 9, 0, 65535, 9, 0, 131071, 9, 0, 196607, 9, 0)
+layer_1/name = "Layer1"
+
+[node name="Player" parent="." instance=ExtResource("3_vmq0t")]
+position = Vector2(48, 48)
+
+[node name="GlassSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_l07iu")
+volume_db = -6.169
+
+[node name="StageCompleted" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_fd2q1")

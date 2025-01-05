@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://xc4rtxkk6ydu"
+path="res://.godot/imported/Glass_step.wav-a027ada17d5c7026ef61a86100096ca0.sample"
+
+[deps]
+
+source_file="res://Music/Sound effect/Glass_step.wav"
+dest_files=["res://.godot/imported/Glass_step.wav-a027ada17d5c7026ef61a86100096ca0.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

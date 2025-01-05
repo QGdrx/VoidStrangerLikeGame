@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bgxbtal2wukj5"
+path="res://.godot/imported/StageCompleted.mp3-89ddc26f6c7c31d94a250c5e762aa259.mp3str"
+
+[deps]
+
+source_file="res://Music/Sound effect/StageCompleted.mp3"
+dest_files=["res://.godot/imported/StageCompleted.mp3-89ddc26f6c7c31d94a250c5e762aa259.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,121 @@
+[gd_resource type="TileSet" load_steps=27 format=3 uid="uid://m0clvwg7c4u1"]
+
+[ext_resource type="Texture2D" uid="uid://bn8kj64mqi4q3" path="res://Sprites/Tiles/Escalier.png" id="1_8bse0"]
+[ext_resource type="Texture2D" uid="uid://cww6lypfb6mgn" path="res://Sprites/Tiles/Case vide violette2.png" id="3_uayng"]
+[ext_resource type="Texture2D" uid="uid://dtiaft36qcjtw" path="res://Sprites/Tiles/Case violette2 V2.png" id="4_an3df"]
+[ext_resource type="Texture2D" uid="uid://b8kmqe40aevte" path="res://Sprites/Tiles/Case violette2.png" id="5_eg51t"]
+[ext_resource type="Texture2D" uid="uid://cbu6jpia2qc7i" path="res://Sprites/Tiles/Escalier_blocked.png" id="6_5qmbj"]
+[ext_resource type="Texture2D" uid="uid://bfg1cqs0nfu45" path="res://Sprites/Tiles/Bouton.png" id="6_008jp"]
+[ext_resource type="Texture2D" uid="uid://goim1p74kllk" path="res://Sprites/Tiles/Bouton_Appuye.png" id="7_jls5n"]
+[ext_resource type="Texture2D" uid="uid://c830ck5h6214k" path="res://Sprites/Tiles/Case2 violette2 V2.png" id="8_khhpu"]
+[ext_resource type="Texture2D" uid="uid://pptbwsmimasf" path="res://Sprites/Tiles/Case2 violette2.png" id="9_7mgwi"]
+[ext_resource type="Texture2D" uid="uid://d055ars6aslfw" path="res://Sprites/Tiles/Case3 violette2 V2.png" id="10_uky5d"]
+[ext_resource type="Texture2D" uid="uid://c7me46fis3s3i" path="res://Sprites/Tiles/Case3 violette2.png" id="11_ml4k3"]
+[ext_resource type="Texture2D" uid="uid://cklllln34bscv" path="res://Sprites/Tiles/Case cassable.png" id="12_4ck5r"]
+[ext_resource type="Texture2D" uid="uid://mfl0n3fljm21" path="res://Sprites/Tiles/Case vide de vide.png" id="13_8vs7j"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_72ima"]
+texture = ExtResource("1_8bse0")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/custom_data_0 = true
+0:0/0/custom_data_5 = true
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1xurm"]
+texture = ExtResource("3_uayng")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gkmse"]
+texture = ExtResource("4_an3df")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3rh38"]
+texture = ExtResource("5_eg51t")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jcxi0"]
+texture = ExtResource("6_5qmbj")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/custom_data_0 = true
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jxsvx"]
+texture = ExtResource("6_008jp")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/custom_data_0 = true
+0:0/0/custom_data_1 = true
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8t4g1"]
+texture = ExtResource("7_jls5n")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/custom_data_0 = true
+0:0/0/custom_data_3 = true
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tvd7s"]
+texture = ExtResource("8_khhpu")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/custom_data_0 = true
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yudpd"]
+texture = ExtResource("9_7mgwi")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/custom_data_0 = true
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nruv7"]
+texture = ExtResource("10_uky5d")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/custom_data_0 = true
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t78p3"]
+texture = ExtResource("11_ml4k3")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/custom_data_0 = true
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_76hvm"]
+texture = ExtResource("12_4ck5r")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/custom_data_0 = true
+0:0/0/custom_data_4 = true
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y6bkh"]
+texture = ExtResource("13_8vs7j")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[resource]
+tile_size = Vector2i(32, 32)
+custom_data_layer_0/name = "Walkable"
+custom_data_layer_0/type = 1
+custom_data_layer_1/name = "is_button"
+custom_data_layer_1/type = 1
+custom_data_layer_2/name = "is_block"
+custom_data_layer_2/type = 1
+custom_data_layer_3/name = "is_pressed_button"
+custom_data_layer_3/type = 1
+custom_data_layer_4/name = "is_glass"
+custom_data_layer_4/type = 1
+custom_data_layer_5/name = "is_stair"
+custom_data_layer_5/type = 1
+sources/2 = SubResource("TileSetAtlasSource_jxsvx")
+sources/4 = SubResource("TileSetAtlasSource_tvd7s")
+sources/5 = SubResource("TileSetAtlasSource_yudpd")
+sources/6 = SubResource("TileSetAtlasSource_nruv7")
+sources/7 = SubResource("TileSetAtlasSource_t78p3")
+sources/8 = SubResource("TileSetAtlasSource_76hvm")
+sources/9 = SubResource("TileSetAtlasSource_y6bkh")
+sources/10 = SubResource("TileSetAtlasSource_1xurm")
+sources/11 = SubResource("TileSetAtlasSource_gkmse")
+sources/12 = SubResource("TileSetAtlasSource_3rh38")
+sources/3 = SubResource("TileSetAtlasSource_8t4g1")
+sources/0 = SubResource("TileSetAtlasSource_72ima")
+sources/13 = SubResource("TileSetAtlasSource_jcxi0")

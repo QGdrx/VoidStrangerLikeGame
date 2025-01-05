@@ -1,0 +1,102 @@
+[gd_scene load_steps=9 format=3 uid="uid://elmafw3truya"]
+
+[ext_resource type="Script" path="res://Ennemies/Slime.gd" id="1_2br1k"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_e33nj"]
+load_path = "res://.godot/imported/Slime_Spritesheet.png-cbcdf1b2ca63e9e178a6620adbcef51f.ctex"
+
+[sub_resource type="Animation" id="Animation_125nq"]
+resource_name = "Back"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SpriteSlime:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+
+[sub_resource type="Animation" id="Animation_pxivp"]
+resource_name = "Front"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SpriteSlime:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_jl48b"]
+resource_name = "Left"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SpriteSlime:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
+
+[sub_resource type="Animation" id="Animation_da1w0"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SpriteSlime:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_qasip"]
+resource_name = "Right"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SpriteSlime:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xiarq"]
+_data = {
+"Back": SubResource("Animation_125nq"),
+"Front": SubResource("Animation_pxivp"),
+"Left": SubResource("Animation_jl48b"),
+"RESET": SubResource("Animation_da1w0"),
+"Right": SubResource("Animation_qasip")
+}
+
+[node name="Slime" type="Node2D"]
+script = ExtResource("1_2br1k")
+
+[node name="SpriteSlime" type="Sprite2D" parent="."]
+texture = SubResource("CompressedTexture2D_e33nj")
+hframes = 4
+
+[node name="AnimationSlime" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_xiarq")
+}
